@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(152, 192, 6);
+    font-family: 'Noto Sans Mono', monospace;
+    
+    
+}
+/** Titulo */
+.titulo{
+    margin:15px;
+    padding: 10px;
+    text-align: center;
+    
+    background: darkgoldenrod;
+    border-radius: 20px;
+
+    
+}
+
+
+
+
+
+/**Cuadrito con texto expancible*/
+.content{
+    
+    height:auto;
+    
+    
+    
+    background: slateblue;
+    
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.mipresentacion{
+
+    width: 50%;
+    margin: 100px auto ;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    
+    background: darkgray;
+    border: 3px solid darkblue;
+    border-radius: 20px;
+
+}
+.mipresentacion section{
+    line-height: 40px;
+    margin: 5px;
+    padding: 20px;
+    background-color: #424242a6;
+    border-radius: 20px;
+}
+.fotoPerfil{
+    display: flex;
+    align-self: flex-start;
+    width: 30%;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.barras{
+    width: 50%;
+    height: auto;
+    margin: 100px auto;
+    padding: 15px;
+
+    background: darkgray;
+    border: 3px solid darkblue;
+    border-radius: 20px;
+}
+.barras section:nth-child(n){
+    text-align: left;
+    position: relative;
+}
+
+.divh4img{
+    margin: 2px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    background: gold;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.texto{
+    
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    
+}
+
+
+.lista_prueba{
+    margin: 0px 27px;  
+}
+.lista_prueba li{
+    height: auto;
+}
+
+
+
+
+
+
+.abrir_cerrar{
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+    
+}
+
+/** Pie de pagina */
+footer{
+    
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+    height: 150px;
+    margin: 15px;
+    border-radius: 20px;
+
+}
+.red-social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px ) {
+    .mipresentacion{
+        width: 100%;
+        display: block;
+    }
+    .fotoPerfil{
+        margin: 0px 33%;
+    }
+    .barras{
+        width: 100%;
+    }
+}
